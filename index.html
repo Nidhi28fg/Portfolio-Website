@@ -8,168 +8,147 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="tailwind.config.js" rel="tailwind">
   <title>Document</title>
-
 </head>
 
-<body
-  class="md:max-lg:flex bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 uppercase font-trebuchet text-white font-semibold p-5 m-5 text-left">
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold p-5 m-5 text-left">
 
-  <header class="flex flex-row gap-2 ">
-    <!-- Profile image -->
-    
-    <!-- introduction  -->
-    <section class="border-r w-1/3 m-2 p-8 ">
-      <div class="h-lvh"><nav class="border-y-2">
-      <img src="https://mimo.app/i/emmy.png" width="150px" class="rounded-full h-51 mb-8" />
-    </nav>
-        <h1 class="text-5xl mb-4 sm:text-left ">Nidhi Singh Bhadoria</h1>
-        <h2 class="text-lg mb-4 text-justify">Fresher Front-end developer | web development | specializing in HTML, CSS, TAILWIND,
-          JavaScript, Github, React.js and Node.js </h2>
-        <p class="mb-4"></p>
-      <div class="block sm:text-left">
-        <a href="mailto:teamguffonidhi28@gmail.com"
-          class="text-base rounded-lg  text-blue-500 no-underline mb-4 bg-white hover:bg-blue-700 hover:text-white w-10 p-2">
-          Email</a>
-        <a href="https://github.com/Nidhi28fg/Tailwind-Project"
-          class="text-base rounded-lg text-blue-500 mb-4 no-underline bg-white w-5 hover:bg-blue-700 hover:text-white p-2 m-2">Github
-          </a>
-        <a href="tel:8860523651"
-          class="text-base rounded-lg text-blue-500 no-underline mb-4 bg-white hover:bg-blue-700 hover:text-white w-10 p-2 m-2">Phone
-          No</a>
+  <header class="flex flex-col md:flex-row gap-2">
+    <!-- Profile image and introduction -->
+    <section class="border-r md:w-1/3 m-2 p-4 md:p-8">
+      <div class="md:h-full">
+        <nav class="border-y-2 mb-4 md:mb-8">
+          <img src="https://mimo.app/i/emmy.png" class="rounded-full w-32 md:w-40 lg:w-52 mb-4 md:mb-8" />
+        </nav>
+        <h1 class="text-3xl md:text-5xl mb-4">Nidhi Singh Bhadoria</h1>
+        <h2 class="text-lg mb-4">Fresher Front-end Developer | Web Development | HTML, CSS, TAILWIND, JavaScript, GitHub, React.js, Node.js</h2>
+        <div class="flex flex-col sm:flex-row gap-2">
+          <a href="mailto:teamguffonidhi28@gmail.com" class="text-base rounded-lg text-blue-500 bg-white hover:bg-blue-700 hover:text-white p-2 mb-2 sm:mb-0">Email</a>
+          <a href="https://github.com/Nidhi28fg/Tailwind-Project" class="text-base rounded-lg text-blue-500 bg-white hover:bg-blue-700 hover:text-white p-2 mb-2 sm:mb-0">GitHub</a>
+          <a href="tel:8860523651" class="text-base rounded-lg text-blue-500 bg-white hover:bg-blue-700 hover:text-white p-2">Phone No</a>
         </div>
-          
-
-
       </div>
     </section>
-    <!-- Education -->
-    <section class="w-3/4 m-2 p-2 text-justify">
-      <div class="flex flex-row gap-10 border-b">
-        <div class="w-1/3">
-          <h2 class="text-lg mb-4"> EDUCTION </h2>
+
+    <!-- Main content -->
+    <section class="md:w-2/3 m-2 p-4 md:p-8 text-justify">
+      <!-- Education -->
+      <div class="flex flex-col md:flex-row gap-10 border-b mb-4 pb-4">
+        <div class="w-full md:w-1/3">
+          <h2 class="text-lg mb-4">EDUCATION</h2>
         </div>
-        <div class="w-3/4 p-2 mb-4">
-          <P class="text-sm uppercase"><span class="text-white-900 text-lg mb-4 ">Bachelor of Computer Applications
-              (BCA),</span><br />
+        <div class="w-full md:w-2/3">
+          <p class="text-sm uppercase mb-4">
+            <span class="text-white-900 text-lg">Bachelor of Computer Applications (BCA),</span><br />
             Computer Application<br />
             Amity University Noida<br />
             2020 - 2023<br />
-            Percentage: 60.00%<br /></P>
-
-          <P class="text-sm uppercase mt-4"><span class="text-white-900 text-lg mb-4 mt-4">Senior Secondary (XII),
-              Science<br /></span>
+            Percentage: 60.00%<br />
+          </p>
+          <p class="text-sm uppercase mb-4">
+            <span class="text-white-900 text-lg">Senior Secondary (XII), Science</span><br />
             Govt S Kanya Vidyalaya E Block Nand Nagari Delhi<br />
             (CBSE board)<br />
             Year of completion: 2019<br />
-            CGPA: 9.00/10<br></P>
-          <P class="text-sm uppercase mt-4"> <span class="text-white-900 text-lg mt-4">
-              Secondary (X)<br /></span>
+            CGPA: 9.00/10<br>
+          </p>
+          <p class="text-sm uppercase">
+            <span class="text-white-900 text-lg">Secondary (X)</span><br />
             Saraswati Pub Sec Sch Budh Vihar Mandoli DLI<br />
             (CBSE board)<br />
             Year of completion: 2017<br />
-            CGPA: 8.00/10 </span><br /></p>
-
+            CGPA: 8.00/10<br>
+          </p>
         </div>
       </div>
-<!-- work experience -->
 
-      <div class="flex flex-row gap-10 mt-4 border-b">
-        <div class="w-1/3">
+      <!-- Work experience -->
+      <div class="flex flex-col md:flex-row gap-10 border-b mb-4 pb-4">
+        <div class="w-full md:w-1/3">
           <h2 class="text-lg mb-4">WORK EXPERIENCE</h2>
         </div>
-        <div class="w-3/4 mb-4 p-2 ">
-          <p class="text-sm uppercase">
-            <span class="text-white-900 text-lg mb-4">React js Development</span><br />
+        <div class="w-full md:w-2/3">
+          <p class="text-sm uppercase mb-4">
+            <span class="text-white-900 text-lg">React.js Development</span><br />
             GUFFO, Virtual<br />
             Internship • Jun 2023 - Jul 2023 (1 month)<br />
-            Developed and maintained web applications using React.js and Node.js, improving user engagement by 20%.</br>
-            Assisted in the development of client projects using HTML, CSS, JavaScript.</br>
-            Maintained and updated existing websites to enhance functionality and performance.</br>
+            Developed and maintained web applications using React.js and Node.js, improving user engagement by 20%.<br />
+            Assisted in the development of client projects using HTML, CSS, JavaScript.<br />
+            Maintained and updated existing websites to enhance functionality and performance.<br />
             Provided technical support and troubleshooting for web applications.
-
           </p>
-          <P class="text-sm uppercase mt-4"> <span class="text-white-900 text-lg mb-4 mt-4"> Web
-              Development</span><br />
+          <p class="text-sm uppercase">
+            <span class="text-white-900 text-lg">Web Development</span><br />
             CodSoft, Virtual<br />
-            Internship • Jun 2024 - Present (1 month)</P><br />
+            Internship • Jun 2024 - Present (1 month)
+          </p>
         </div>
       </div>
 
-<!-- trainings and courses -->
-      <div class="flex flex-row gap-10 pb-4 mb-4 mt-4 border-b">
-        <div class="w-1/3">
+      <!-- Trainings and courses -->
+      <div class="flex flex-col md:flex-row gap-10 border-b mb-4 pb-4">
+        <div class="w-full md:w-1/3">
           <h2 class="text-lg mb-4 uppercase">TRAININGS/ COURSES</h2>
         </div>
-        <div class="w-3/4">
-          <p class="text-sm uppercase"> <span class="text-white-900 text-lg uppercase mb-4">JavaScript
-              Certificate</span><br /></span>
+        <div class="w-full md:w-2/3">
+          <p class="text-sm uppercase mb-4">
+            <span class="text-white-900 text-lg uppercase">JavaScript Certificate</span><br />
             KGcoding By Parshant Sir, Online<br />
-            Jul 2024 - Jul 2024<br /></p>
-          <P class="text-sm uppercase mt-4"><span class="text-white-900 text-lg uppercase mb-4 mt-4">React and Redux Certificate</span> <br />
+            Jul 2024 - Jul 2024<br />
+          </p>
+          <p class="text-sm uppercase mb-4">
+            <span class="text-white-900 text-lg uppercase">React and Redux Certificate</span><br />
             Scaler, Online<br />
-            Jul 2024 - Jul 2024<br /></P>
-          <P class="text-sm uppercase mt-4"> <span class="text-white-900 text-lg uppercase mb-4 mt-4"> React And Redux
-              Certification Test</span><br />
+            Jul 2024 - Jul 2024<br />
+          </p>
+          <p class="text-sm uppercase mb-4">
+            <span class="text-white-900 text-lg uppercase">React And Redux Certification Test</span><br />
             KGCoding By Prashant Sir, Online<br />
-            Jan 2024 - Jun 2024<br /></P>
-          <P class="text-sm uppercase mt-4"><span class="text-white-900 text-lg uppercase mb-4 mt-4"> Programming In
-              HTML5 With Javascript And CSS3</span><br />
+            Jan 2024 - Jun 2024<br />
+          </p>
+          <p class="text-sm uppercase mb-4">
+            <span class="text-white-900 text-lg uppercase">Programming In HTML5 With JavaScript And CSS3</span><br />
             KGCoding By Prashant Sir, Online<br />
-            Jan 2024 - Jun 2024<br /></P>
-          <P class="text-sm uppercase mt-4"><span class="text-white-900 text-lg uppercase mb-4 mt-4">Google Ads Search
-              Certification</span><br />
+            Jan 2024 - Jun 2024<br />
+          </p>
+          <p class="text-sm uppercase mb-4">
+            <span class="text-white-900 text-lg uppercase">Google Ads Search Certification</span><br />
             Google Ads Search, Online<br />
             Sep 2023 - Sep 2023<br />
-            <a href="https://skillshop.exceedlms.com/profiles/465c6581ecfa40f
-            88ea8925bd1c450f0"> link </a><br />
-          </P>
-          <P class="text-sm uppercase mt-4"><span class="text-white-900 text-lg uppercase mb-4 mt-4"> Digital Marketing
-              Course</span><br />
+            <a href="https://skillshop.exceedlms.com/profiles/465c6581ecfa40f88ea8925bd1c450f0" class="underline">link</a>
+          </p>
+          <p class="text-sm uppercase">
+            <span class="text-white-900 text-lg uppercase">Digital Marketing Course</span><br />
             Internshala Trainings, Online<br />
             Aug 2023 - Oct 2023<br />
-            Successfully completed a 8 weeks online certified training<br />
-            on Digital Marketing. The training consisted of Building<br />
-            Web Presence, Search Engine Optimisation, Digital<br />
-            Advertising with Google Ads, Google Ads Search<br />
-            Certification, Social Media Marketing<br />
-            Digital Marketing Course<br />
+            Successfully completed an 8-week online certified training on Digital Marketing. The training consisted of Building Web Presence, Search Engine Optimisation, Digital Advertising with Google Ads, Google Ads Search Certification, Social Media Marketing.<br />
             Skill India NSDC, Delhi<br />
-            Aug 2023 - Oct 2023<br /></P>
-
-        </div>
-      </div>
-
-      <!-- skills-->
-      <div class="flex flex-row gap-10 mt-4 border-b">
-        <div class="w-1/3">
-          <h2 class="text-lg mb-4 ">SKILLS</h2>
-        </div>
-        <div class="w-3/4 Block">
-          <p class="uppercase mb-4">
-            Search Engine Optimization (SEO), Digital Marketing,
-            WordPress, HTML&CSS,JavaScript, ReactJS,
-            Tailwind CSS,        Node.js,
-            Figma, GitHub,
-            Bootstrap
+            Aug 2023 - Oct 2023<br />
           </p>
         </div>
       </div>
 
-      <!-- language -->
-      <div class="flex flex-row gap-10 mt-4">
-        <div class="w-1/3">
-          <h2 class="text-lg mb-4 uppercase">language</h2>
+      <!-- Skills -->
+      <div class="flex flex-col md:flex-row gap-10 border-b mb-4 pb-4">
+        <div class="w-full md:w-1/3">
+          <h2 class="text-lg mb-4">SKILLS</h2>
         </div>
-        <div class="w-3/4 Block">
+        <div class="w-full md:w-2/3">
           <p class="uppercase">
-            English and hindi
+            Search Engine Optimization (SEO), Digital Marketing, WordPress, HTML & CSS, JavaScript, React.js, Tailwind CSS, Node.js, Figma, GitHub, Bootstrap
           </p>
         </div>
       </div>
 
+      <!-- Languages -->
+      <div class="flex flex-col md:flex-row gap-10">
+        <div class="w-full md:w-1/3">
+          <h2 class="text-lg mb-4 uppercase">LANGUAGES</h2>
+        </div>
+        <div class="w-full md:w-2/3">
+          <p class="uppercase">
+            English and Hindi
+          </p>
+        </div>
+      </div>
     </section>
-  </header>
-
-</body>
-
-</html>
+  </header
